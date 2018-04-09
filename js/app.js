@@ -133,6 +133,8 @@ function setSelectedCard(card) {
     }
 }
 
+//checks validity of the cards so you're not clicking on cards 
+//that are matched or open!
 function checkClickValidity(card) {
     if (card.nodeName !== 'LI') {
         return false;
