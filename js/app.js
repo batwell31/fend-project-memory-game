@@ -128,3 +128,18 @@ function setSelectedCard(card) {
         selectedCard2.className = "card open show";
     }
 }
+
+function checkClickValidity(card) {
+    if (card.nodeName !== 'LI') {
+        return false;
+    }
+
+    if (card.className.includes("match")) {
+        return false;
+    }
+
+    if (clickLock) {
+        return false;
+    }
+    return true;
+}
