@@ -11,6 +11,7 @@ let timer = new Timer();
 let selectedCard1, selectedCard2 = null;
 let clickLock = false;
 
+//Adds an EventListener to the timer to get the time values!
 timer.addEventListener('secondsUpdated', function (evt) {
     timerElement.innerHTML = timer.getTimeValues().toString();
 });
