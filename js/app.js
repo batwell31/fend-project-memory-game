@@ -211,4 +211,6 @@ function winCondition() {
     let endMoves = document.querySelector('#endMoves');
     const endRestart = document.querySelector('#endRestart');
     modal.style.display = "block";
+    endTime.innerHTML = timer.getTimeValues().seconds;
+    timer.stop();
 }
