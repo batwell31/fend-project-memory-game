@@ -35,6 +35,7 @@ window.onload = function () {
     createHtml(true);
 };
 
+//creates the HTML that makes up the Game Deck
 function createHtml(hide) {
     let shuffledCards = shuffle(cardList);
     for (var index = 0; index < shuffledCards.length; index++) {
