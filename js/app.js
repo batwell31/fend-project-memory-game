@@ -53,6 +53,7 @@ function createHtml(hide) {
     }
 }
 
+//Clears out the HTML from the Game Deck!
 function clearHtml() {
     deck.innerHTML = '';
 }
