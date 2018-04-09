@@ -6,7 +6,7 @@ const restart = document.querySelector('#restart');
 const timerElement = document.querySelector('#timer');
 const modal = document.getElementById('myModal');
 let moves = 0;
-
+let matches_found = 0;
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
