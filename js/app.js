@@ -104,6 +104,8 @@ function resetStarRating() {
     star3.className = 'fa fa-star';
 }
 
+//will listen for a click on the restart(refresh) icon on screen
+//and call these functions.
 restart.addEventListener('click', function (evt) {
     const restart = document.querySelector('#restart');
     clearHtml();
