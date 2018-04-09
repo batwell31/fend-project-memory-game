@@ -8,6 +8,7 @@ const modal = document.getElementById('myModal');
 let moves = 0;
 let matches_found = 0;
 let timer = new Timer();
+let selectedCard1, selectedCard2 = null;
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
