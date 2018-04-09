@@ -210,4 +210,5 @@ function winCondition() {
     let endTime = document.querySelector('#endTime');
     let endMoves = document.querySelector('#endMoves');
     const endRestart = document.querySelector('#endRestart');
+    modal.style.display = "block";
 }
