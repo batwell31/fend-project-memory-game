@@ -162,3 +162,7 @@ function updateMoves(increment, clear) {
 
     movesElement.innerHTML = moves;
 }
+
+deck.addEventListener('click', function (evt) {
+    evt.preventDefault();
+});
