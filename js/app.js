@@ -175,4 +175,31 @@ deck.addEventListener('click', function (evt) {
     updateMoves(true, false);
     var card = evt.target;
     setSelectedCard(card);
+    if (selectedCard1 && selectedCard2) {
+        var cardType1 = selectedCard1.children[0];
+        var cardType2 = selectedCard2.children[0];
+        if (cardType1.className === cardType2.className) {
+            //we have a match don't reset
+            cardType1.className = cardType1.className + " match";
+            cardType2.className = cardType2.className + " match";
+            matches_found++;
+            if (matches_found === 8) {
+                winCondition();
+            }
+
+            selectedCard1 = null;
+            selectedCard2 = null;
+        }
+        else {
+            //we don't have a match
+            clickLock = true;
+            setTimeout(function () {
+                selectedCard1.className = "card";
+                selectedCard2.className = "card";
+                selectedCard1 = null;
+                selectedCard2 = null;
+                clickLock = false;
+            }, 650);
+        }
+    }
 });
