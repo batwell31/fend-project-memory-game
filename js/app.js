@@ -143,3 +143,16 @@ function checkClickValidity(card) {
     }
     return true;
 }
+
+function updateMoves(increment, clear) {
+    if (increment) {
+        moves++;
+        starRating();
+        endStarRating();
+    }
+    if (clear) {
+        moves = 0;
+    }
+
+    movesElement.innerHTML = moves;
+}
