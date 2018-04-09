@@ -9,6 +9,7 @@ let moves = 0;
 let matches_found = 0;
 let timer = new Timer();
 let selectedCard1, selectedCard2 = null;
+let clickLock = false;
 
 timer.addEventListener('secondsUpdated', function (evt) {
     timerElement.innerHTML = timer.getTimeValues().toString();
