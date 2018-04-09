@@ -203,3 +203,11 @@ deck.addEventListener('click', function (evt) {
         }
     }
 });
+
+//function to be ran when you find all 8 matches!!
+function winCondition() {
+    let winDiv = document.querySelector('#modal-footer');
+    let endTime = document.querySelector('#endTime');
+    let endMoves = document.querySelector('#endMoves');
+    const endRestart = document.querySelector('#endRestart');
+}
