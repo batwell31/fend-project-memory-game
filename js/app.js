@@ -23,6 +23,12 @@ function shuffle(array) {
     return array;
 }
 
+//calls these functions when the window loads.
+window.onload = function () { 
+    clearHtml();
+    createHtml(true);
+};
+
 function createHtml(hide) {
     let shuffledCards = shuffle(cardList);
     for (var index = 0; index < shuffledCards.length; index++) {
