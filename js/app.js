@@ -77,3 +77,22 @@ function starRating() {
         star3.className = 'fa fa-star';
     }
 }
+
+//changes the stars based on moves(clicks) for the modal popup window.
+function endStarRating() {
+    if (moves >= 40) {
+        endStar1.className = 'fa fa-star';
+        endStar2.className = 'fa fa-star-o';
+        endStar3.className = 'fa fa-star-o';
+    }
+    else if (moves >= 25) {
+        endStar1.className = 'fa fa-star';
+        endStar2.className = 'fa fa-star';
+        endStar3.className = 'fa fa-star-o';
+    }
+    else {
+        endStar1.className = 'fa fa-star';
+        endStar2.className = 'fa fa-star';
+        endStar2.className = 'fa fa-star';
+    }
+}
