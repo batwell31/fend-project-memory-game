@@ -7,6 +7,7 @@ const timerElement = document.querySelector('#timer');
 const modal = document.getElementById('myModal');
 let moves = 0;
 let matches_found = 0;
+
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -22,5 +23,20 @@ function shuffle(array) {
     return array;
 }
 
-
+function createHtml(hide) {
+    let shuffledCards = shuffle(cardList);
+    for (var index = 0; index < shuffledCards.length; index++) {
+        const card = document.createElement('li');
+        if (!hide) {
+            card.className = 'card open show';
+        }
+        else {
+            card.className = 'card';
+        }
+        const cardType = document.createElement('i');
+        cardType.className = 'fa ' + shuffledCards[index];
+        card.appendChild(cardType);
+        deck.appendChild(card);
+    }
+}
 
