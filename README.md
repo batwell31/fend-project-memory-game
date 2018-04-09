@@ -1,17 +1,27 @@
 # Memory Game Project
 
-## Table of Contents
+So this game was a project provided through Udacity for me to complete!  It was dificult, but 
+the most rewarding things often are! 
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+## Game Instructions
 
-## Instructions
+* Clicking on a card will start the timer
+* To win find all 8 matches!
+* Play as many times as you like by pressing the restart icon!
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Game Functionality
 
-To get started, open `js/app.js` and start building out the app's functionality
+* What can you expect this game to do?
+    * It records the time from start to finsih
+    * It counts the total moves you made until completion!
+    * It will even congratulate you when you complete the game!
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## Try it yourself!
+* Live Link
+
+
+
+
 
 ## Contributing
 
