@@ -56,6 +56,7 @@ function clearHtml() {
     deck.innerHTML = '';
 }
 
+//this changes the stars based on how many moves(clicks) you make!
 function starRating() {
     let star1 = document.querySelector('#star1');
     let star2 = document.querySelector('#star2');
