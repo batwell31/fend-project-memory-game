@@ -96,3 +96,22 @@ function endStarRating() {
         endStar2.className = 'fa fa-star';
     }
 }
+
+//resets star rating when you press the restart button!
+function resetStarRating() {
+    star1.className = 'fa fa-star';
+    star2.className = 'fa fa-star';
+    star3.className = 'fa fa-star';
+}
+
+restart.addEventListener('click', function (evt) {
+    const restart = document.querySelector('#restart');
+    clearHtml();
+    createHtml(true);
+    timer = new Timer();
+    timerElement.innerHTML = "00:00:00";
+    matches_found = 0;
+    resetStarRating();
+    selectedCard1 = null;
+    selectedCard2 = null;
+});
