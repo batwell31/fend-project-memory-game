@@ -56,3 +56,23 @@ function clearHtml() {
     deck.innerHTML = '';
 }
 
+function starRating() {
+    let star1 = document.querySelector('#star1');
+    let star2 = document.querySelector('#star2');
+    let star3 = document.querySelector('#star3');
+    if (moves >= 40) {
+        star1.className = 'fa fa-star';
+        star2.className = 'fa fa-star-o';
+        star3.className = 'fa fa-star-o';
+    }
+    else if (moves >= 25) {
+        star1.className = 'fa fa-star';
+        star2.className = 'fa fa-star';
+        star3.className = 'fa fa-star-o';
+    }
+    else {
+        star1.className = 'fa fa-star';
+        star2.className = 'fa fa-star';
+        star3.className = 'fa fa-star';
+    }
+}
