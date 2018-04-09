@@ -214,4 +214,15 @@ function winCondition() {
     endTime.innerHTML = timer.getTimeValues().seconds;
     timer.stop();
     endMoves.innerHTML = moves;
+    endRestart.addEventListener('click', function (evt) {
+        modal.style.display = "none";
+        clearHtml();
+        createHtml(true);
+        timerElement.innerHTML = "00:00:00";
+        timer = new Timer();
+        matches_found = 0;
+        resetStarRating();
+        selectedCard1 = null;
+        selectedCard2 = null;
+    });
 }
