@@ -40,3 +40,7 @@ function createHtml(hide) {
     }
 }
 
+function clearHtml() {
+    deck.innerHTML = '';
+}
+
