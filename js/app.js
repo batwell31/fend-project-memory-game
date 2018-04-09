@@ -58,6 +58,7 @@ function createHtml(hide) {
 //Clears out the HTML from the Game Deck!
 function clearHtml() {
     deck.innerHTML = '';
+    updateMoves(false, true);
 }
 
 //this changes the stars based on how many moves(clicks) you make!
@@ -118,8 +119,7 @@ restart.addEventListener('click', function (evt) {
     timerElement.innerHTML = "00:00:00";
     matches_found = 0;
     resetStarRating();
-    selectedCard1 = null;
-    selectedCard2 = null;
+    
 });
 
 function setSelectedCard(card) {
