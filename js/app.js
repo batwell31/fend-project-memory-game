@@ -114,9 +114,9 @@ function resetStarRating() {
 restart.addEventListener('click', function (evt) {
     const restart = document.querySelector('#restart');
     clearHtml();
-    createHtml(true);
-    timer = new Timer();
+    createHtml(true);   
     timerElement.innerHTML = "00:00:00";
+    timer = new Timer();
     matches_found = 0;
     resetStarRating();
     
@@ -217,9 +217,9 @@ function winCondition() {
     endRestart.addEventListener('click', function (evt) {
         modal.style.display = "none";
         clearHtml();
-        createHtml(true);
-        timerElement.innerHTML = "00:00:00";
+        createHtml(true);        
         timer = new Timer();
+        timerElement.innerHTML = "00:00:00";
         matches_found = 0;
         resetStarRating();
         selectedCard1 = null;
