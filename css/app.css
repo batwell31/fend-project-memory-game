@@ -198,3 +198,54 @@ h1 {
     font-size: 33px;
 }
 
+/* Responsive Styles Below */
+
+@media screen and (min-width: 301px) and (max-width: 700px) {
+  .align-center {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .modal-content {
+        font-size: 20px;
+    }
+
+    .deck .card.show {
+        font-size: 20px;
+    }
+
+    .deck .card.match {
+        cursor: default;
+        background: #00ffaa;
+        font-size: 20px;
+    }
+
+    .deck .card {    
+        height: 62px;
+        width: 62px;
+        background: #2e3d49;
+        font-size: 0;
+        color: #ffffff;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 1px 10px 0 rgba(46, 61, 73, 0.5);
+    }
+
+
+    .deck {   
+        width: 330px;
+        min-height: 340px;
+        background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+        padding: 16px;
+        border-radius: 5px;
+        box-shadow: 6px 7px 10px 0 rgba(46, 61, 73, 0.5);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 1.5em;
+    }
+}
