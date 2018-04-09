@@ -117,3 +117,14 @@ restart.addEventListener('click', function (evt) {
     selectedCard1 = null;
     selectedCard2 = null;
 });
+
+function setSelectedCard(card) {
+    if (!selectedCard1) {
+        selectedCard1 = card;
+        selectedCard1.className = "card open show";
+    }
+    else if (!selectedCard2) {
+        selectedCard2 = card;
+        selectedCard2.className = "card open show";
+    }
+}
