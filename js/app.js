@@ -165,4 +165,14 @@ function updateMoves(increment, clear) {
 
 deck.addEventListener('click', function (evt) {
     evt.preventDefault();
+    if (!checkClickValidity(evt.target)) {
+        return;
+    }
+
+    if (timer.getTimeValues().seconds === 0) {
+        timer.start()
+    }
+    updateMoves(true, false);
+    var card = evt.target;
+    setSelectedCard(card);
 });
