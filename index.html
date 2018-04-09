@@ -6,12 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Matching Game</title>
     <meta name="description" content="">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-
+    <div id="myModal" class="modal">
+    
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="txt-center">Play Again?</h2>
+                <div id="endRestart" class="restart">
+                    <i class="fa fa-repeat"></i>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <br>
+                    <span>You completed the game in</span>
+                    <span id="endTime" class="num-color"></span> seconds, congrats!!</p>
+                <span>You made </span>
+                <span id="endMoves" class="num-color"></span>
+                <span> moves this game!</span>
+                <br>
+                <span>You earned a rating of </span>
+                <span>
+                    <i id="endStar1" class="fa fa-star"></i>
+                    <i id="endStar2" class="fa fa-star"></i>
+                    <i id="endStar3" class="fa fa-star"></i>
+                </span>
+                <span>!</span>
+            </div>
+        </div>
+    
+    </div>
     <div class="container">
         <header>
             <h1>Matching Game</h1>
