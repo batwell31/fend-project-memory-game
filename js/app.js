@@ -213,4 +213,5 @@ function winCondition() {
     modal.style.display = "block";
     endTime.innerHTML = timer.getTimeValues().seconds;
     timer.stop();
+    endMoves.innerHTML = moves;
 }
