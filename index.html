@@ -49,18 +49,25 @@
             <h1>Matching Game</h1>
         </header>
 
-        <section class="score-panel">
-        	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        	</ul>
-
-        	<span class="moves">3</span> Moves
-
-            <div class="restart">
-        		<i class="fa fa-repeat"></i>
-        	</div>
+        <section class="row score-panel">
+            <div class="col-lg-12">
+                <span id="moves" class="span moves">0</span>
+                <span class="span"> Moves</span>
+                <i id="restart" class="span fa fa-repeat restart"></i>
+                <br>
+                <ul id="stars" class="stars span">
+                    <li>
+                        <i id="star1" class="fa fa-star span"></i>
+                    </li>
+                    <li>
+                        <i id="star2" class="fa fa-star span"></i>
+                    </li>
+                    <li>
+                        <i id="star3" class="fa fa-star span"></i>
+                    </li>
+                </ul>
+                <span id="timer" class="span timer"> 00:00:00</span>
+            </div>
         </section>
 
         <ul class="deck">
