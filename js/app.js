@@ -10,6 +10,10 @@ let matches_found = 0;
 let timer = new Timer();
 let selectedCard1, selectedCard2 = null;
 
+timer.addEventListener('secondsUpdated', function (evt) {
+    timerElement.innerHTML = timer.getTimeValues().toString();
+});
+
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
