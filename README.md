@@ -17,7 +17,7 @@ the most rewarding things often are!
     * It will even congratulate you when you complete the game!
 
 ## Try it yourself!
-* Live Link
+* https://batwell31.github.io/fend-project-memory-game/
 
 
 
