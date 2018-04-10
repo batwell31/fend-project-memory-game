@@ -147,6 +147,10 @@ function checkClickValidity(card) {
     if (clickLock) {
         return false;
     }
+
+    if (card.className.includes("show")) {
+        return false;
+    }
     return true;
 }
 
