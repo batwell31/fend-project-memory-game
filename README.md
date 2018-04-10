@@ -19,7 +19,7 @@ the most rewarding things often are!
     * It will even congratulate you when you complete the game!
 
 ## Try it yourself!
-* https://batwell31.github.io/fend-project-memory-game/
+* 
 
 ## API/BOOTSTRAP
 Right now I am using Coda Font in my code.  I have a linked style sheet in the head.
