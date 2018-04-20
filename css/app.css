@@ -52,12 +52,12 @@ h1 {
 /* Modal Content */
 .modal-content {
     position: relative;
-    background-color: #2e3d49;
+    background-color: #092842;
     color: #fff;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
+    width: 45%;
     box-shadow: 0 4px 8px 0 #2e3d49,0 6px 20px 0 #2e3d49;
     text-align: center;
     font-weight: bold;
@@ -69,7 +69,7 @@ h1 {
 /* Modal Header */
 .modal-header {
     padding: 2px 16px;
-    background-color: #02b3e4;
+    background-color: #ff8b07;
     color: #fff;
     font-size: 25px;
     text-align: center;
@@ -205,6 +205,11 @@ h1 {
 /* Responsive Styles Below */
 
 @media screen and (min-width: 520px) and (max-width: 700px) {
+    .modal-content {
+    width: 80%;
+    font-size: 15px;      
+}
+    
     .align-center {
         font-size: 20px;
         text-align: center;
@@ -265,6 +270,11 @@ h1 {
 }
 
 @media screen and (min-width: 384px) and (max-width: 519px) {
+    .modal-content {
+        width: 80%;
+        font-size: 14px;       
+    }
+    
     .align-center {
         font-size: 20px;
         text-align: center;
@@ -329,6 +339,12 @@ h1 {
 }
 
 @media screen and (max-width: 383px) {
+    
+    .modal-content {
+        width: 80%;
+        font-size: 15px;       
+    }
+    
     .span {
         font-size: 18px;
     }
@@ -348,7 +364,8 @@ h1 {
     }
 
     #main-heading {
-        font-size: 30px;
+        font-size: 40px;
+        padding-bottom: 60px;
     }
         
     .deck .card.show {
@@ -396,6 +413,11 @@ h1 {
 }
 
 @media screen and (min-width: 880px) {
+    .modal-content {
+    width: 80%;
+    font-size: 15px;      
+    }
+    
     .score-panel {
         width: 60%;
         margin: auto;
@@ -403,19 +425,35 @@ h1 {
 }
 
 @media screen and (min-width: 763px) and (max-width: 1024px) {
+    #main-heading {
+        font-size: 80px;
+        padding-bottom: 50px;
+    }
+    
+    .span {
+        font-size: 35px;
+    }    
     .score-panel {
         width: 80%;
         margin: auto;
     }
+    .modal-content {
+    width: 80%;
+    font-size: 35px;      
+    }
 }
 
 @media screen and (max-height: 380px) and (max-width: 670px) {
+    .modal-content {
+        width: 80%;      
+    }
+    
     .score-panel {
         width: 50%;
         margin: auto;
     }
     #main-heading {
-        font-size: 20px;
+        font-size: 25px;
     }
         
     .deck .card.show {
@@ -461,6 +499,6 @@ h1 {
         margin: 0 0 1.2em;
     }
     .span {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
