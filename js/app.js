@@ -66,12 +66,12 @@ function starRating() {
     let star1 = document.querySelector('#star1');
     let star2 = document.querySelector('#star2');
     let star3 = document.querySelector('#star3');
-    if (moves >= 40) {
+    if (moves >= 50) {
         star1.className = 'fa fa-star';
         star2.className = 'fa fa-star-o';
         star3.className = 'fa fa-star-o';
     }
-    else if (moves >= 25) {
+    else if (moves >= 30) {
         star1.className = 'fa fa-star';
         star2.className = 'fa fa-star';
         star3.className = 'fa fa-star-o';
@@ -85,7 +85,7 @@ function starRating() {
 
 //changes the stars based on moves(clicks) for the modal popup window.
 function endStarRating() {
-    if (moves >= 40) {
+    if (moves >= 50) {
         endStar1.className = 'fa fa-star';
         endStar2.className = 'fa fa-star-o';
         endStar3.className = 'fa fa-star-o';
@@ -184,8 +184,8 @@ deck.addEventListener('click', function (evt) {
         var cardType2 = selectedCard2.children[0];
         if (cardType1.className === cardType2.className) {
             //we have a match don't reset
-            cardType1.className = cardType1.className + " match";
-            cardType2.className = cardType2.className + " match";
+            cardType1.className = cardType1.className + " card match";
+            cardType2.className = cardType2.className + " card match";
             matches_found++;
             if (matches_found === 8) {
                 winCondition();
