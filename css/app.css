@@ -190,6 +190,12 @@ h1 {
     font-size: 33px;
 }
 
+.deck .card.false {
+    cursor: default;
+    background: #f30101;
+    font-size: 33px;
+}
+
 .deck .card.match {
     cursor: default;
     background: #0ee79f;
@@ -214,6 +220,12 @@ h1 {
 
     .deck .card.show {
         font-size: 24.75px;
+    }
+
+    .deck .card.false {
+    cursor: default;
+    background: #f30101;
+    font-size: 24.75px;
     }
 
     .deck .card.match {
@@ -272,12 +284,18 @@ h1 {
     }
 
     .deck .card.show {
-        font-size: 23px;
+        font-size: 22px;
     }
 
+    .deck .card.false {
+        cursor: default;
+        background: #f30101;
+        font-size: 22px;
+    }
+    
     .deck .card.match {
         cursor: default;
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .deck .card {    
@@ -334,6 +352,12 @@ h1 {
     }
         
     .deck .card.show {
+        font-size: 15px;
+    }
+
+    .deck .card.false {
+        cursor: default;
+        background: #f30101;
         font-size: 15px;
     }
 
@@ -395,6 +419,12 @@ h1 {
     }
         
     .deck .card.show {
+        font-size: 15px;
+    }
+
+    .deck .card.false {
+        cursor: default;
+        background: #f30101;
         font-size: 15px;
     }
 

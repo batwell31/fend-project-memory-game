@@ -194,7 +194,9 @@ deck.addEventListener('click', function (evt) {
             selectedCard1 = null;
             selectedCard2 = null;
         }
-        else {
+        else {            
+            selectedCard1.className = "card false";
+            selectedCard2.className = "card false";
             //we don't have a match
             clickLock = true;
             setTimeout(function () {
